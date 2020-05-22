@@ -9,6 +9,6 @@ import "./index.css";
 render(
 <Router>
   <App />
-  </Router>,
+</Router>,
   document.getElementById("app")
   );
