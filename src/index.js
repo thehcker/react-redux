@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 
 const store = configureStore()
 render(
-  <Provider store={store}>
+<Provider store={store}>
 <Router>
   <App />
 </Router>
