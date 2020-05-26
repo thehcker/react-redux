@@ -24,10 +24,10 @@ class CoursesPage extends Component {
     render() {
         return (
             <>
-            <h2>Courses</h2>
-            <CourseList courses={this.props.courses}/>
+                <h2>Courses</h2>
+                <CourseList courses={this.props.courses}/>
                
-        </>
+            </>
         )
        
     }
