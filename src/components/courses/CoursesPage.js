@@ -9,7 +9,7 @@ import CourseList from "./courseList";
 
 class CoursesPage extends Component {
     componentDidMount(){
-        const { courses, actions, authors } = this.props
+        const { courses, authors, actions } = this.props;
         if (courses.length === 0){
             actions.loadCourses().catch(error => {
                 alert("Loading courses failed" + error)
@@ -25,7 +25,7 @@ class CoursesPage extends Component {
         return (
             <>
                 <h2>Courses</h2>
-                <CourseList courses={this.props.courses}/>
+                <CourseList courses={this.props.courses} />
                
             </>
         )
@@ -39,7 +39,7 @@ CoursesPage.propTypes = {
     actions: PropTypes.object.isRequired
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
         courses: state.authors.length === 0 ? [] : state.courses.map(course => {
             return {
