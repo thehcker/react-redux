@@ -1,4 +1,5 @@
 export default {
-    authors: [],
-    courses: []
-}
+  authors: [],
+  courses: [],
+  apiCallsInProgress: 0
+};
